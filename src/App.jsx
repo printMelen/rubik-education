@@ -1,7 +1,16 @@
+import Sidebar, { SidebarItem } from "./components/Sidebar.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMedal,
+} from "@fortawesome/free-solid-svg-icons";
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline text-center">App</h1>
+    <>
+    <Sidebar>
+      <SidebarItem icon={<FontAwesomeIcon icon={faMedal} />} text="Winners"/>
+    </Sidebar>
+    </>
   )
 }
 
